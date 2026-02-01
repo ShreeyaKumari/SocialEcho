@@ -1,5 +1,258 @@
 # SocialEcho
 
+SocialEcho is a social networking platform where users can create accounts, join communities, create posts, and interact with other users.
+
+This repository contains both the backend server and frontend client required to run the application locally.
+
+---
+
+## Project Overview
+
+The project consists of two main parts:
+
+- Backend server built with Node.js, Express, and MongoDB
+- Frontend client built with React
+- JWT-based authentication
+- Community and post management features
+
+---
+
+## Project Structure
+SocialEcho/
+│
+├── server/ Backend (Node.js + Express + MongoDB)
+├── client/ Frontend (React)
+└── README.md
+
+
+
+---
+
+## Prerequisites
+
+Before running the project, ensure the following tools are installed:
+
+- Node.js (version 18 recommended)
+- npm (comes with Node.js)
+- MongoDB (local installation or MongoDB Atlas)
+- Git
+
+Verify installation:
+node -v
+npm -v
+git --version
+
+
+---
+
+## Step 1: Clone Repository
+
+Open terminal or command prompt and run:
+
+git clone https://github.com/ShreeyaKumari/SocialEcho.git
+
+
+
+
+---
+
+## Step 2: Install Backend Dependencies
+
+Navigate to server folder:
+
+cd server
+npm install
+
+
+This installs backend dependencies.
+
+---
+
+## Step 3: Backend Environment Setup
+
+Create a `.env` file inside the `server` folder.
+
+Example configuration:
+
+PORT=4000
+MONGODB_URI=mongodb://127.0.0.1:27017/db_socialecho
+SECRET=your_access_secret
+REFRESH_SECRET=your_refresh_secret
+
+
+If using MongoDB Atlas, replace the MongoDB URI with your connection string.
+
+---
+
+## Step 4: Start Backend Server
+
+Inside the server folder, run:
+
+npm start
+
+
+If successful, terminal shows:
+
+Server up and running on port 4000
+Connected to database
+
+
+Keep this terminal open.
+
+---
+
+## Step 5: Install Frontend Dependencies
+
+Open a new terminal and navigate to client folder:
+
+cd SocialEcho/client
+npm install
+
+
+---
+
+## Step 6: Frontend Environment Setup
+
+Create `.env` file inside the client folder:
+
+REACT_APP_API_URL=http://localhost:4000
+
+
+This connects frontend to backend.
+
+---
+
+## Step 7: Start Frontend Application
+
+Inside client folder:
+
+npm start
+
+
+The application will open automatically in browser:
+
+http://localhost:3000
+
+
+---
+
+## Running the Project
+
+Two terminals must be active:
+
+Terminal 1 (Backend):
+cd server
+npm start
+
+
+Terminal 2 (Frontend):
+cd client
+npm start
+
+
+---
+
+## Common Issues and Fixes
+
+### Server shows "Server is down"
+- Ensure backend server is running.
+- Check MongoDB is running.
+- Verify frontend `.env` API URL.
+
+### Port already in use
+Stop conflicting application or change port in `.env`.
+
+### Dependencies missing
+Run:
+npm install
+
+inside respective folder.
+
+---
+
+## Useful Commands
+
+Install dependencies:
+npm install
+
+
+Run backend:
+npm start
+
+
+Run frontend:
+npm start
+
+
+Build frontend for production:
+npm run build
+
+
+---
+
+## Development Workflow
+
+Typical development steps:
+
+git pull
+git checkout -b feature-name
+make changes
+git add .
+git commit -m "description"
+git push
+
+
+Then open a pull request.
+
+---
+
+## Contribution Guidelines
+
+1. Pull latest code.
+2. Create a new branch.
+3. Implement changes.
+4. Commit changes with clear messages.
+5. Push branch and create pull request.
+
+---
+
+## License
+
+This project is created for academic and learning purposes.
+
+---
+
+## Notes
+
+- Backend runs on port 4000 by default.
+- Frontend runs on port 3000 by default.
+- MongoDB must be running before starting backend.
+- Environment files (.env) should not be committed to version control.
+
+---
+
+End of documentation.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---------------------------------------------------------------------------
+# SocialEcho
+
 A social networking platform with automated content moderation and context-based authentication system.
 
 [Watch Demo](https://youtu.be/Tmncayg7FeU)
